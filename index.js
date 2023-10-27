@@ -19,7 +19,7 @@ contactForm.addEventListener('submit',(e) => {
         formMessage.textContent = "Insert a valid email please"
         return
     }
-    if(!(/^[a-zA-Z0-9\s]{5,}$/.test(formData.message))){
+    if(!(/^.{5,}$/.test(formData.message))){
         formMessage.style.display = "block"
         formMessage.textContent = "Check your message, please"
         return

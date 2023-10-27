@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asets/piggy-bank(1).png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main class="m-0 p-0">
+        <section class="hero_image cont-fluid" id="home-id">
+            <div class="hero_image_container">
+                <h1 class="hero_image_title" ><span class="green_ubuntu">@dev</span>:~/<span
+                        class="success">wellcome!</span>$</h1>
+                <h1 class="hero_image_info" id="hero-image-title-id">I'm Juan Carlos</h1>
+                <p class="hero_image_subtile">Based on La Paz-Bolivia</p>
+                <a href="#contact-id" class="hero-button">Hire me</a>
+            </div>
+        </section>
+        <div class="section-aside-container">
+
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list__item">
+                        <a href="#home-id" class="list__button">
+                            <i class="fa-solid fa-house nav__icon" class="list_img"></i>
+                            <span class="nav__link">Home</span>
+                        </a>
+                    </li>
+                    <li class="list__item list__item--click">
+                        <a href="#info-id" class="list__button list__button--click">
+                            <i class="fa-solid fa-user-gear nav__icon" aria-colspan=""></i>
+                            <span class="nav__link">Info</span>
+                            <i class="fa-solid fa-chevron-right nav__icon nav__arrow"></i>
+                        </a>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="https://drive.google.com/file/d/1k0-C4EB4-jdYf6t9vv8fGLWHfzIEme5A/view" target="_blank" class="nav__link nav__link--inside">Download CV</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <a href="#services-id" class="list__button">
+                            <i class="fa-solid fa-bell-concierge nav__icon"></i>
+                            <span class="nav__link">Services</span>
+                        </a>
+                    </li>
+                    <li class="list__item ">
+                        <a href="#resume-id" class="list__button">
+                            <i class="fa-solid fa-graduation-cap nav__icon"></i>
+                            <span  class="nav__link">Resume</span>
+                        </a>
+                    </li>
+                    <li class="list__item list__item--click">
+                        <a href="#projects-id" class="list__button list__button--click">
+                            <i class=" fa-solid fa-folder-open nav__icon"></i>
+                            <span  class="nav__link">Projects</span>
+                            <i class="fa-solid fa-chevron-right nav__icon nav__arrow"></i>
+                        </a>
+                        <ul class="list__show" id="nav__projects__list">
+                           <!-- to seach li elemnts search on index js the addProjectsNav method  -->
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <a href="#contact-id" class="list__button">
+                            <i  class="fa-solid fa-phone-volume nav__icon"></i>
+                            <span  class="nav__link">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sections-container">
+                <section class="dark info about-section" id="info-id">
+                    <div class="section-group">
+                        <div class="title">
+                            <h1 class="title_1 bg-title" style="color: rgb(55, 59, 59);">ABOUT ME</h1>
+                            <h3 class="title_2">Know <span class="success">Me</span> More</h3>
+                        </div>
+                        <p class="info_subtitle">Hello I’m <span class="success">Juan Carlos</span>, <br> Electronic
+                            Engineering
+                            <br> and web developer
+                        </p>
+                        <img class="info_img" src="./asets/mifoto.jpg" alt="">
+                    </div>
+                    <div class="section-group">
+                        <p class="info_p">I have experience in developing applications, encompassing both Front End and
+                            Back End.
+                            Additionally, I've worked on IoT projects and stay actively engaged with the latest
+                            technological
+                            trends.</p>
+                        <div class="info_data_cont">
+                            <h3 class="info_data_el"><strong>Name:</strong> Juan Carlos Mamani Rojas</h3>
+                            <hr class="info_row">
+                            <h3 class="info_data_el"><strong>Email:</strong> <a href="#contact-id">jcmrcdf@gmail.com</a></h3>
+                            <hr class="info_row">
+                            <h3 class="info_data_el"><strong>From:</strong> La paz - Bolivia</h3>
+                            <hr class="info_row">
+                            <a target="_blank" href="https://drive.google.com/file/d/1k0-C4EB4-jdYf6t9vv8fGLWHfzIEme5A/view" class="info_button">Download CV</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-secondary cont-fluid services-section" id="services-id">
+                    <div class="title">
+                        <h1 class="title_1 bg-title" style="color: rgb(51, 122, 150);">SERVICES</h1>
+                        <h3 class="title_2">What <span class="success">I</span> do?</h3>
+                    </div>
+                    <div class="services-card-cont" id="services-cont">
+                        <!-- the components are rendered by js search addServices method  -->
+                    </div>
+                </section>
+                <section class="bg-primary cont-fluid resume-section" id="resume-id">
+                    <div class="section-group">
+                        <div class="title">
+                            <h1 class="title_1 bg-title">SUMMARY</h1>
+                            <h3 class="title_2">Re<span class="success">su</span>me</h3>
+                        </div>
+
+                        <div class="resume-card-cont" id="resume-cont">
+                            <!-- here the cards are rendered by js call addResumes method -->
+                        </div>
+                    </div>
+                    <div class="section-group">
+                        <h2 class="skills-title"><span class="green_ubuntu">@dev</span>:~/<span
+                                class="success">Skills!</span>$</h2>
+                        <div class="resume-skills-cont" id="skills-id-cont">
+
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-secondary projects-section" id="projects-id">
+                    <div class="title">
+                        <h1 class="title_1 bg-title" style="color: rgb(51, 122, 150)" >PROJECTS</h1>
+                        <h3 class="title_2">My <span class="success">wo</span>rks</h3>
+                    </div>
+                    <div class="projects-cont" id="projects-container">
+                    </div>
+                </section>
+                <section class="bg-primary contact-section" id="contact-id">
+                    <div class="title">
+                        <h1 class="title_1 bg-title">CONTACT</h1>
+                        <h3 class="title_2">Cont<span class="success">act</span> me</h3>
+                    </div>
+                    <h1 class="contact-title">Send me a note</h1>
+                    <div class="contact-container">
+                        <form action="" class="contant-form" id="contact-form-id">
+                            <input class="contact-form-input" name="name" type="text" placeholder="Name">
+                            <input class="contact-form-input" name="email" type="text" placeholder="Email">
+                            <textarea class="contact-form-input contact-form-txt" name="message" type="text"
+                                placeholder="Tell me anything you want..."></textarea>
+                                <span id="form-msg" class="form-message"></span>
+                                <span class="form-loader" id="form-loader-id"></span>
+                            <button class="contact-form-button" id="form-button-id">Send Message</button>
+                            
+                        </form>
+                        <div class="contact-info">
+                            <h1 class="contact-info-title">ADRESS</h1>
+                            <p class="contact-info-content">Z/IV Centenario <br> #220 Tarapaya Street <br> La Paz -
+                                Bolivia</p>
+                            <div class="contact-info-item">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <h3>(+591) 73080372</h3>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <h3 class="m-0">jcmrcdf@gmail.com</h3>
+                            </div>
+                            <h1 class="contact-info-title">Follow me</h1>
+                            <div class="contact-info-icons">
+                                <a target="_blank" href="https://www.facebook.com/JuanCarlosCDF"><img class="contact__icon" src="./asets/icons/facebook-official.svg" alt=""></a>
+                                <a target="_blank" href="https://api.whatsapp.com/send/?phone=+59173080372"><img class="contact__icon" src="./asets/icons/whatsapp-tile.svg" alt=""></i></a>
+                                <a target="_blank" href="https://github.com/JuanCarloscdf"><img class="contact__icon" src="./asets/icons/github-icon.svg" alt=""></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/juancarloscdf"><img class="contact__icon" src="./asets/icons/linkedin-icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="dark m-0 p-0">
+        <h5 class="footer-msg">have a good day <i class="fa-solid fa-sun success"></i></h5>
+    </footer>
+    <nav class=" mobil-nav">
+        <a class="footer-nav-item" href="#home-id">
+            <i class=" footer-nav-icon fa-solid fa-house"></i>
+            <span class="footer-nav-txt">home</span>
+        </a>
+        <a class="footer-nav-item" href="#info-id">
+            <i class=" footer-nav-icon fa-solid fa-user-gear"></i>
+            <span class="footer-nav-txt">info</span>
+        </a>
+        <a class="footer-nav-item" href="#services-id">
+            <i class="footer-nav-icon fa-solid fa-bell-concierge"></i>
+            <span class="footer-nav-txt">services</span>
+        </a>
+        <a class="footer-nav-item" href="#resume-id">
+            <i class="footer-nav-icon fa-solid fa-graduation-cap"></i>
+            <span class="footer-nav-txt">resume</span>
+        </a>
+        <a class="footer-nav-item" href="#projects-id">
+            <i class=" footer-nav-icon fa-solid fa-folder-open"></i>
+            <span class="footer-nav-txt">projects</span>
+        </a>
+        <a class="footer-nav-item" href="#contact-id">
+            <i class=" footer-nav-icon fa-solid fa-phone-volume"></i>
+            <span class="footer-nav-txt">contact</span>
+        </a>
+    </nav>
+    <section class="modal modal--projects" id="modal-id">      
+    </section>
+    <script src="https://kit.fontawesome.com/98d6ec25ea.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -28,7 +28,7 @@ contactForm.addEventListener('submit',(e) => {
     formMessage.style.display="none"
     formLoader.style.display="block"
     formButton.style.display="none"
-    fetch('https://formsubmit.co/ajax/jcmrcdf@gmail.com',
+    fetch('https://formsubmit.co/ajax/6e9388bc7f79fc68ac0e8562a4b2af2f',
         {
             method:"POST",
             body: new FormData(e.target)

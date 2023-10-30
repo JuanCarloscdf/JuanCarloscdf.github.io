@@ -152,10 +152,11 @@ button:hover{
     justify-content: center;
     align-items: center;
     max-width: 960px;
+    padding: 0 1rem;
 }
 .section-group{
     margin: 1rem auto;
-    padding: 0;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,13 +171,7 @@ button:hover{
     width: 100vw;
     padding: 16px 0;
 }
-.info{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .title{
     position: relative;
     height: 50px;
@@ -198,6 +193,14 @@ button:hover{
 .title_2{
     position: absolute;
 }
+
+.title_2::after{
+    content: '';
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--fcb--succes);
+}
 .info_subtitle{
     display: block;
     text-align: center;
@@ -214,16 +217,16 @@ button:hover{
 }
 .info_p{
     font-family: 'Raleway';
-    font-size: 1rem;
-    font-weight: 200;
-    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 95%;
     max-width: 350px;
     margin: 0 auto;
     text-align: start;
 }
 .info_data_cont{
     margin: 16px auto;
-    width: 80%;
+    width: 95%;
     max-width: 350px;
     padding: 0;
 }
@@ -289,17 +292,18 @@ button:hover{
     width: 80%;
 }
 .service-info-title{
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin: 0;
 }
 .service-info-p{
-    font-size: 0.75rem;
+    font-size: .9rem;
     padding: 0;
     margin: 0;
 }
 /* resume */
 .resume-card-cont{
-    width: 100vw;
+    width: 100%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,9 +311,11 @@ button:hover{
     gap: 1rem;
 }
 .resume-card{
-    max-width: 240px;
+    box-sizing: border-box ;
+    width: 100%;
     background-color: black;
     padding: 1rem;
+    margin: 0 auto;
     border-radius: .5rem;
 }
 .resume-card-title{
@@ -325,7 +331,7 @@ button:hover{
     color: var(--fcb--succes);
 }
 .resume-card-content{
-    font-size: 0.813rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 /* skills */
@@ -345,6 +351,7 @@ button:hover{
    text-align: center;
 }
 .resume-skills-cont{
+    margin: 0 auto;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -355,14 +362,15 @@ button:hover{
 .resume-card-skill{
    display: flex;
    align-items: center;
+   justify-content: center;
    gap: 1rem;
 }
 .resume-card-skill-icon {
    width: 2rem
 }
 .resume-card-fillbar{
-    width: 70%;
-    min-width: 200px;
+    width: 100%;
+    min-width: 240px;
     max-width: 350px;
 }
 /* projects */
@@ -381,8 +389,9 @@ button:hover{
     padding-bottom: 1rem;
 }
 .projects-card{
-    width: 80%;
-    max-width: 280px;
+    box-sizing: border-box ;
+    width: 100%;
+    max-width: 350px;
     border-radius: 1rem;
     padding: 1rem;
     text-align: center;
@@ -463,16 +472,20 @@ button:hover{
 }
 .contact-form-button{
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 .contact-form-input{
     width: 80%;
     max-width: 350px;
-    background-color: #000000a8;
+    background-color: #000000cc;
     color: #fff;
     font-weight: 500;
     border: none;
     padding: .5rem 1rem;
     border-radius: .3rem;
+}
+.contact-form-input::placeholder{
+    color: white;
 }
 .contact-form-txt{
     height: 6.25rem;
@@ -480,7 +493,7 @@ button:hover{
 .contact-info-content{
     text-align: center;
     margin: 0;
-    font-size: 0.813rem;
+    font-size: 1rem;
 }
 .contact-info-item{
     display: flex;
@@ -507,10 +520,11 @@ footer{
 .footer-msg{
     padding: 1rem 0;
     padding-bottom: 4rem;
+    font-size: 1rem;
     margin: 0;
     text-align: center;
     color:var(--fcb--succes);
-    font-weight: 100;
+    font-weight: 600;
 }
 /* mobil nav */
 .nav{
@@ -561,6 +575,7 @@ footer{
     display: none;
 }
 .sections-container{
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -769,6 +784,7 @@ footer{
     color: var(--fcb--succes);
 }
 .modal__img--figcaption{
+    text-align: center;
     font-size: 1rem;
     color: var(--fcb--succes);
     margin: 0;
@@ -789,7 +805,7 @@ footer{
     .about-section{
         display: flex;
         flex-direction: row;
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
     .services-card-cont{
         width: 100%;
@@ -804,6 +820,8 @@ footer{
         padding: 2rem 0;
     }
     .resume-section{
+        box-sizing: border-box ;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -879,10 +897,22 @@ footer{
     }
     .modal__title{
         font-size: 2rem;
+        margin-bottom: 0;
     }
+    .modal__conta{
+        max-height: 80%;
+    }
+    .contact-title{
+        margin: 0;
+        padding: 0;
+    }
+    
 }
 
 @media (min-width:1200px) {
+    .title{
+        margin-bottom: 2rem;
+    }
     .title_1{
         font-size: 3rem;
     }
@@ -913,8 +943,29 @@ footer{
         color:var(--fcb--succes);
         transform: scale(1.4);
     }
-  
-}
+    .resume-card{
+        min-width: 400px;
+    }
+    .resume-card-fillbar{
+        min-width: 380px;
+    }
+    .projects-card{
+        min-width: 400px;
+    }
+    .modal__conta{
+        max-height: 75%;
+    }
+    .info_p{
+        font-size: 1.5rem;
+    }
+    .projects-card-content{
+        font-size: 1rem;
+    }
+    .resume-card-fillbar{
+        min-width: 350px;
+    }
+
+}   
 
 @keyframes loader {
     0%{

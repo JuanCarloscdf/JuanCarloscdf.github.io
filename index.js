@@ -81,12 +81,12 @@ const mockServices = [
     {
         icon: 'fa-database',
         title: 'Database handling',
-        description: "Proficient in server-side technologies, database design, and API integration. Committed to robust functionality and seamless performance."
+        description: "Design, administration and development of SQL and NoSQL databases."
     },
     {
         icon: 'fa-server',
         title: 'Back End developer',
-        description: "Experienced server-side technologies, databases, and API integration. Committed to robust functionality and seamless performance."
+        description: "Proficient in developing REST APIs using TypeScript and JavaScript, implementing Model-View-Controller (MVC) architecture, incorporating authentication, validations, encryption, and more."
     },
     {
         icon: 'fa-desktop',
@@ -96,7 +96,7 @@ const mockServices = [
     {
         icon: 'fa-palette',
         title: 'UI/UX Design',
-        description: "Passionate about crafting user-friendly interfaces and captivating experiences."
+        description: "Skilled in designing and implementing user interfaces using tools how Figma."
     }
 ]
 const containerId = 'services-cont'
@@ -213,7 +213,7 @@ const mockProjects = [
     {   
         id:1,
         title:"IoT Platform",
-        content:'The Internet of Things platform enables users to manage IoT devices. In this project, an IoT test device was created with sensors and actuators. Communication is handled by the MQTT protocol.',
+        content:'The Internet of Things platform enables users to manage IoT devices. On this project, an IoT test device was created with sensors and actuators. Communication is handled by the MQTT protocol.',
         imgUrl:['./asets/iot3.png','./asets/iot2.png','./asets/iot1.png'],
         client:"Personal project",
         tech:"Node.js, html, css, JavaScript, Mongo, Express, Nuxt.js, HighCharts, Docker, MQTT-Broker",

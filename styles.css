@@ -229,6 +229,7 @@ button:hover{
 }
 .info_img{
     width: 60%;
+    min-width: 240px;
     max-width: 250px;
     margin: 0 auto;
     padding: 4px;
@@ -890,7 +891,7 @@ footer{
     
     }
     .info_img{
-        width: 70%;
+        width: 80%;
         max-width: 450px;
     }
     

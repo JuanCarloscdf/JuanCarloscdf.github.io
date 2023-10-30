@@ -86,17 +86,17 @@ const mockServices = [
     {
         icon: 'fa-server',
         title: 'Back End developer',
-        description: "Proficient in developing REST APIs using TypeScript and JavaScript, implementing Model-View-Controller (MVC) architecture, incorporating authentication, validations, encryption, and more."
+        description: "REST API development using TypeScript and JavaScript, implementing the Model-View-Controller (MVC) architecture, incorporating authentication, validations, encryption and more."
     },
     {
         icon: 'fa-desktop',
         title: 'Front End developer',
-        description: "Experienced in HTML, CSS, JavaScript, and various frameworks. Committed to usability and captivating design."
+        description: "Interfaces development with HTML, CSS, JavaScript, and various frameworks. Committed to usability and captivating design."
     },
     {
         icon: 'fa-palette',
         title: 'UI/UX Design',
-        description: "Skilled in designing and implementing user interfaces using tools how Figma."
+        description: "Design and implementation of user interfaces using tools such as Figma."
     }
 ]
 const containerId = 'services-cont'
@@ -121,12 +121,12 @@ const mockResume = [
     {
         title:'Electronic engineer',
         subtitle:'Universidad Mayor de San Andres',
-        content:'I got my electronic engineer degree in Universidad Mayor de San Andres Bolvia focusing in telecommunications branch',
+        content:'I obtained my degree in electronic engineering from the Universidad Mayor de San Andrés Bolvia with a specialization in the telecommunications field.',
     },
     {
         title:'Full Stack Developer',
         subtitle:'Free Code Camp',
-        content:'I honed my skills at FreeCodeCamp, solidifying my path as a Full-stack Developer after my background in Electronic Engineering.',
+        content:'I improved my skills as a FULL-STACK DEVELOPER at FreeCodeCamp, after my experience in Electronic Engineering.',
     }
 ]
 const resumeContId = 'resume-cont'
@@ -234,7 +234,7 @@ const mockProjects = [
     },
     {
         id:3,
-        title:"Unident",
+        title:"UNIDENT",
         content:'This page enables dental appointment management, including viewing establishment details, patient reviews, service information, checking appointment availability, making reservations, and more.',
         imgUrl:['./asets/unident1.png','./asets/unident2.png','./asets/unident3.png'],
         client:"Personal project",

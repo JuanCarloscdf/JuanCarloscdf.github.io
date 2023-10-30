@@ -33,15 +33,22 @@ input:focus {
     border: none;
     background-color: rgba(0, 0, 0, 0.668);
 }
+#particles-js{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-color: #000000;
+}
 main{
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: transparent;
     position: relative;
-    z-index: 99;
+    z-index: 50;
 }
 .warning{
     color: tomato;
@@ -97,8 +104,9 @@ button:hover{
 
 /* hero image */
 .hero_image {
-    background: linear-gradient(#0000006c, #0000006c), url('./asets/heroImage.jpg') no-repeat center fixed;
+    background: linear-gradient(#0000005f, #00000055), url('./asets/heroImage.jpg') no-repeat center fixed;
     background-size: cover;
+    opacity: 1;
     width: 100vw;
     height: 98vh;
     display: grid;
@@ -162,6 +170,7 @@ button:hover{
     align-items: center;
     max-width: 960px;
     padding:0;
+    background-color: transparent;
 }
 .section-group{
     margin: 1rem auto;
@@ -272,7 +281,7 @@ button:hover{
     align-items: center;
     max-width: 960px;
     background: rgb(58,57,68);
-    background: radial-gradient(circle, rgba(58,57,68,1) 0%, rgba(38,104,128,1) 52%, rgba(20,68,78,1) 100%); 
+    background: radial-gradient(circle, rgba(58,57,68,1) 0%, rgba(38,104,128,1) 52%, rgba(20,68,78,1) 70%); 
 }
 .services-card-cont{
     display: flex;
@@ -322,22 +331,23 @@ button:hover{
 .resume-card{
     box-sizing: border-box ;
     width: 100%;
-    background-color: black;
+    background: rgb(58,57,68);
+    background: radial-gradient(circle, rgba(58,57,68,1) 0%, rgba(38,104,128,1) 52%, rgba(20,68,78,1) 100%); 
     padding: 1rem;
     margin: 0 auto;
     border-radius: .5rem;
 }
 .resume-card-title{
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 0;
     margin: .3rem 0;
 }
 .resume-card-subtitle{
-    font-size: 0.875rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 700;
     padding: 0;
     margin: .3rem 0;
-    color: var(--fcb--succes);
+    color: black;
 }
 .resume-card-content{
     font-size: 1rem;
@@ -351,8 +361,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     max-width: 960px;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;    
+    background: transparent   
 }
 .skills-title{
     font-size: 1.5rem;
@@ -486,10 +495,10 @@ button:hover{
 .contact-form-input{
     width: 80%;
     max-width: 350px;
-    background-color: #000000cc;
+    background-color: transparent;
+    border: 1px solid white;
     color: #fff;
     font-weight: 500;
-    border: none;
     padding: .5rem 1rem;
     border-radius: .3rem;
 }
@@ -519,8 +528,7 @@ button:hover{
 .contact-section{
     width: 100%;
     max-width: 960px;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
+    background: transparent
 }
 /* footer */
 footer{
@@ -555,7 +563,7 @@ footer{
 }
 .footer-nav-item:hover .footer-nav-txt,
 .footer-nav-item:hover .footer-nav-icon {
-    color:rgb(235, 171, 8);
+    color:var(--fcb--succes);
     transform: scale(1.4);
     transition: transform .3s;
 }
@@ -600,6 +608,7 @@ footer{
     justify-content: center;
     background-color:rgba(0, 0, 0, 0.623);
     position: fixed;
+    z-index: 99;
     bottom: 0;
 }
 .nav{
@@ -688,6 +697,7 @@ footer{
     bottom: 0;
     background-color: #000000b9;
     opacity: 0;
+    z-index: 99;
     pointer-events: none;
     transition: opacity .6s;
     --modalUpContainer : translateY(-100vh);
@@ -875,6 +885,7 @@ footer{
         gap: 2rem;
         background-color:rgba(0, 0, 0, 0.623);
         position: fixed;
+        z-index: 90;
         bottom: 0;
     
     }
@@ -917,6 +928,7 @@ footer{
     }
     
 }
+
 
 @media (min-width:1200px) {
     .title{

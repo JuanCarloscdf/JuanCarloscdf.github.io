@@ -9,12 +9,12 @@ html, body {
     padding: 0;
     overflow-x: hidden; /* Opcional: Evita que haya desplazamiento horizontal */
     box-sizing: border-box;
-}
-
-* {
+    color: white;
     font-family: 'Ubuntu Mono', monospace;
     font-family: 'Raleway', sans-serif;
-    color: aliceblue;
+}
+* {
+    
     --bg-primary: #16181a;
     --bg-secondary: #343A40;
     --c-primary: #2A3035;
@@ -26,6 +26,7 @@ html, body {
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 textarea:focus,
 input:focus {
@@ -56,8 +57,14 @@ main{
 .successfully{
     color: var(--fc--ubunu--green);
 }
-.bg-title{
-    color: #4f5253;
+.about-bg-title{
+    color:#373b3b;
+}
+.resume-section-title{
+    color: #373b3b;
+}
+.contact-section-title{
+    color: #373b3b;
 }
 .m-0{
     margin: 0;
@@ -345,7 +352,7 @@ button:hover{
 }
 .resume-card-subtitle{
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 800;
     padding: 0;
     margin: .3rem 0;
     color: black;

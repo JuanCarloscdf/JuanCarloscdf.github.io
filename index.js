@@ -8,7 +8,7 @@ contactForm.addEventListener('submit',(e) => {
 /*     console.log(Object.fromEntries(new FormData(e.target))); */
     e.preventDefault()
     const formData = Object.fromEntries(new FormData(e.target))
-    if(!(/^[a-zA-Z\s'-]{4,50}$/.test(formData.name))){
+    if(!(/^[A-Za-zÀ-ÿ\s]{5,}(?:[ \'-][A-Za-zÀ-ÿ]+)*$/.test(formData.name))){
         formMessage.style.display = "block"
         formMessage.textContent = "Check your name, please"
         return

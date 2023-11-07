@@ -84,6 +84,11 @@ const mockServices = [
         description: "Design, administration and development of SQL and NoSQL databases."
     },
     {
+        icon: 'fa-palette',
+        title: 'UI/UX Design',
+        description: "Design and implementation of user interfaces using tools such as Figma."
+    },
+    {
         icon: 'fa-server',
         title: 'Back End developer',
         description: "REST API development using TypeScript and JavaScript, implementing the Model-View-Controller (MVC) architecture, incorporating authentication, validations, encryption and more."
@@ -92,11 +97,6 @@ const mockServices = [
         icon: 'fa-desktop',
         title: 'Front End developer',
         description: "Interfaces development with HTML, CSS, JavaScript, and various frameworks. Committed to usability and captivating design."
-    },
-    {
-        icon: 'fa-palette',
-        title: 'UI/UX Design',
-        description: "Design and implementation of user interfaces using tools such as Figma."
     }
 ]
 const containerId = 'services-cont'
@@ -121,7 +121,7 @@ const mockResume = [
     {
         title:'Electronic engineer',
         subtitle:'Universidad Mayor de San Andres',
-        content:'I obtained my degree in electronic engineering from the Universidad Mayor de San Andrés Bolvia with a specialization in the telecommunications field.',
+        content:'I obtained my degree in electronic engineering from the Universidad Mayor de San Andrés Bolivia with a specialization in the telecommunications field.',
     },
     {
         title:'Full Stack Developer',
@@ -185,7 +185,6 @@ const mockSkills=[
         value:'50'
     }
 ]
-addSkills(skillsId,mockSkills)
 
 /* 🅰🅳🅳🅸🅽🅶 🅿🆁🅾🅹🅴🅲🆃🆂*/
 
@@ -338,3 +337,71 @@ const addProjectsNav =(containerId,data) => {
     })
 }
 addProjectsNav('nav__projects__list',mockProjects)
+
+function addTechIcons(containerId,data){
+    const container = document.getElementById(containerId)
+
+    data.forEach(el => {
+        const card = document.createElement('img')
+        card.classList.add('tech__icon')
+        card.setAttribute('src',`./asets/icons/${el.icon}`)
+        container.appendChild(card)
+    });
+
+}
+const mockTechIcons = [
+    {
+        id: 1,
+        icon: 'axios-icon.svg'
+    },
+    {
+        id: 2,
+        icon: 'docker-icon.svg'
+    },
+    {
+        id: 3,
+        icon: 'git-scm-icon.svg'
+    },
+    {
+        id: 4,
+        icon: 'java-icon.svg'
+    },
+    {
+        id: 5,
+        icon: 'js.svg'
+    },
+    {
+        id: 6,
+        icon: 'mongodb-icon.svg'
+    },
+    {
+        id: 7,
+        icon: 'mysql-icon.svg'
+    },
+    {
+        id: 8,
+        icon: 'nestjs-icon.svg'
+    },
+    {
+        id: 9,
+        icon: 'nodejs-icon.svg'
+    },
+    {
+        id: 10,
+        icon: 'reactjs-icon.svg'
+    },
+    {
+        id: 11,
+        icon: 'typescriptlang-icon.svg'
+    },
+    {
+        id: 12,
+        icon: 'w3_css-icon.svg'
+    },
+    {
+        id: 13,
+        icon: 'w3_html5-icon.svg'
+    }
+];
+
+addTechIcons('skills-id-cont',mockTechIcons)

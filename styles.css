@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* body */
-
+html{
+    scroll-behavior: smooth;
+}
 html, body {
     width: 100%;
     margin: 0;
@@ -117,6 +119,7 @@ button:hover{
     height: 98vh;
     display: grid;
     place-items: center;
+
 }
 .hero_image_title {
     font-family: 'Ubuntu Mono';
@@ -137,7 +140,7 @@ button:hover{
 
 .hero_image_subtile {
     font-family: 'Raleway';
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
     font-style: italic;
 }
@@ -630,15 +633,19 @@ footer{
 .list{
     width: 100%;
     height: 100%;
+    margin-right:1rem ;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: .5em;
 }
+.nav__icon{
+
+    padding-right: 1rem;
+}
 .nav__arrow{
     margin-left: auto;
-    padding-right: .5rem;
     transition: transform .3s;
 }
 .arrow .nav__arrow{
@@ -667,12 +674,13 @@ footer{
 }
 .list__button:hover .nav__icon{
     color: #000000;
+
 }
 
 .list__show{
     list-style: none;
     border-left: 1px solid white ;
-    margin:0 1.5rem;
+    margin:0 0 0 2.5rem;
     transition: height .4s;
     height: 0;
 }
@@ -686,10 +694,9 @@ footer{
 .nav__link--inside{
     display: block;
     font-size: .8rem;
-    padding-left: 1rem;
     color: rgb(202, 198, 198);
     font-weight: 300;
-    padding: .5rem 0 .5rem 1rem;
+    padding: .5rem 0 .5rem 1.8rem;
 }
 .nav__link--inside:hover{
     color: #33cdec;
@@ -839,7 +846,7 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         gap: 2rem;
     }
     .services-section{

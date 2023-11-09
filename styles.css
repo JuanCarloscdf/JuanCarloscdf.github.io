@@ -570,9 +570,9 @@ footer{
     min-width: 2rem;
     flex-direction: column;
     justify-content: center;
+    padding: 0 .1rem .5rem .1rem;
     align-items: center;
     transition: trasnform 0.5s;
-    padding: .5rem;
     text-decoration: none;
 }
 .footer-nav-item:hover{
@@ -581,8 +581,8 @@ footer{
 }
 .footer-nav-item:hover .footer-nav-txt,
 .footer-nav-item:hover .footer-nav-icon {
-    color:var(--fcb--succes);
-    transform: scale(1.4);
+    color:yellow;
+    transform: scale(1.8);
     transition: transform .3s;
 }
 
@@ -590,8 +590,10 @@ footer{
     text-align: center;
     width: 100%;
     align-items: center;
-    transform: scale(1.2);
+    transform: scale(1.6);
+    margin: .5rem;
     transition: transform .3s;
+    color: #fdfdfd;
 }
 .footer-nav-txt{
     width: 100%;
@@ -621,11 +623,14 @@ footer{
 }
 .mobil-nav{
     width: 100vw;
-    display: flex;
+    display: none;
     align-items: center;
-    justify-content: center;
-    background-color:rgba(0, 0, 0, 0.623);
+    justify-content: start;
+    gap: .5rem;
+    padding-left: .5rem  ;
+    background-color:rgba(0, 0, 0, 0.76);
     position: fixed;
+    padding: .4rem 0;
     z-index: 99;
     bottom: 0;
 }
@@ -857,8 +862,34 @@ footer{
     height: 100%;
 }
 
+.nav-mobil-icon{
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    position: fixed;
+    z-index: 100;
+    bottom: 12px;
+    right: 12px;
+    opacity: 0;
+    transition: opacity .6s;
+}
+.active-mobil-bar{
+    opacity: 1;
+}
+.active{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
 /* @🅼🅴🅳🅸🅰 🆀🆄🅴🆁🆁🆈 */
-
+@media(min-width:340px){
+    .mobil-nav{
+        justify-content: center;
+        gap: 1rem;
+    }
+}
 @media (min-width:600px) {
     .about-section{
         display: flex;
@@ -917,15 +948,12 @@ footer{
     .mobil-nav{
         width: 100vw;
         gap: 3rem;
-        display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        background-color:rgba(0, 0, 0, 0.623);
         position: fixed;
         z-index: 90;
         bottom: 0;
-    
     }
     .info_img{
         width: 80%;
@@ -980,6 +1008,9 @@ footer{
 
 
 @media (min-width:1200px) {
+    .open-close-cont{
+        display: none;
+    }
     .sections-container{
         margin-left: 8rem;
     }
@@ -999,17 +1030,14 @@ footer{
     .title_2{
         font-size: 2.5rem;
     }
-    .mobil-nav{
-        display: none;
-    }
-
+  
     /* navbar */
     .nav{
         display: block;
     }
 
     .footer-nav-icon{
-        color: white;
+        color: rgb(255, 255, 255)
     }
     .hero_image_title{
         font-size: 2rem;
@@ -1047,6 +1075,10 @@ footer{
     .tech-cont{
         grid-template-columns: repeat(auto-fit,minmax(75px,1fr));
     }
+    .mobil-nav{
+        display: none;
+    }
+
 
 }   
 

@@ -405,3 +405,16 @@ const mockTechIcons = [
 ];
 
 addTechIcons('skills-id-cont',mockTechIcons)
+
+/* handdle icons mobil nav open close */
+const mobilNav = document.getElementById('movil-nav')
+const openCloseCont = document.getElementById('open-close-cont')
+let isOpenOrClose = true
+openCloseCont.addEventListener('click',() => {
+    const openMobil = document.getElementById('open-mobil-nav-icon')
+    const closeMobil = document.getElementById('close-mobil-nav-icon')
+    isOpenOrClose = !isOpenOrClose
+    openMobil.setAttribute('class',!isOpenOrClose? 'active-mobil-bar nav-mobil-icon': 'nav-mobil-icon')
+    closeMobil.setAttribute('class',isOpenOrClose? 'active-mobil-bar nav-mobil-icon': 'nav-mobil-icon')
+    mobilNav.classList.toggle('active')
+})

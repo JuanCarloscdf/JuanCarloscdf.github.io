@@ -211,6 +211,17 @@ const projectsId = "projects-container"
 const mockProjects = [
     {   
         id:1,
+        title:"Senda Botanica",
+        content:'A nature store that offers a wide range of products and provides a convenient shopping experience with a user-friendly cart for placing orders.',
+        imgUrl:['./asets/SB2.png','./asets/SB1.png'],
+        client:"Personal project",
+        tech:"Node.js, html, css, TypeScript, React, redux, figma",
+        year:"2023",
+        git:"https://juancarloscdf.github.io/SendaBerde",
+        gitb:"--",
+    },
+    {   
+        id:2,
         title:"IoT Platform",
         content:'The Internet of Things platform enables users to manage IoT devices. On this project, an IoT test device was created with sensors and actuators. Communication is handled by the MQTT protocol.',
         imgUrl:['./asets/iot3.png','./asets/iot2.png','./asets/iot1.png'],
@@ -221,7 +232,7 @@ const mockProjects = [
         gitb:"https://github.com/JuanCarloscdf/app",
     },
     {
-        id:2,
+        id:3,
         title:"Online Store",
         content:'This website allows users to both offer and purchase products. It features functionalities like a shopping cart, product creation, and buying processes.',
         imgUrl:['./asets/store1.png','./asets/store2.png'],
@@ -232,7 +243,7 @@ const mockProjects = [
         gitb:"https://github.com/JuanCarloscdf/StoreAPI",
     },
     {
-        id:3,
+        id:4,
         title:"UNIDENT",
         content:'This page enables dental appointment management, including viewing establishment details, patient reviews, service information, checking appointment availability, making reservations, and more.',
         imgUrl:['./asets/unident1.png','./asets/unident2.png','./asets/unident3.png'],
